@@ -475,6 +475,31 @@ function handleKeyDown(event) {
     // Redraw the maze with the player
     maze.draw();
 }
+// Get references to the control buttons
+const upButton = document.getElementById("up-btn");
+const downButton = document.getElementById("down-btn");
+const leftButton = document.getElementById("left-btn");
+const rightButton = document.getElementById("right-btn");
+
+// Function to handle button press and trigger movement
+function handleButtonPress(direction) {
+    if (!gameInProgress || !player || !maze || !maze.complete) return;
+    player.move(direction);
+    maze.draw();
+}
+
+// Add event listeners for touchstart (for mobile) and mousedown (for desktop testing)
+upButton.addEventListener("touchstart", () => handleButtonPress("up"));
+upButton.addEventListener("mousedown", () => handleButtonPress("up"));
+
+downButton.addEventListener("touchstart", () => handleButtonPress("down"));
+downButton.addEventListener("mousedown", () => handleButtonPress("down"));
+
+leftButton.addEventListener("touchstart", () => handleButtonPress("left"));
+leftButton.addEventListener("mousedown", () => handleButtonPress("left"));
+
+rightButton.addEventListener("touchstart", () => handleButtonPress("right"));
+rightButton.addEventListener("mousedown", () => handleButtonPress("right"));
 
 class Enemy {
     constructor(name, cellSize, color = "blue", movement) {
