@@ -1,0 +1,285 @@
+/* General body and container styles - Adjusted text color */
+body {
+  background-color: #f0f0f0; /* Lighter background */
+  color: #333; 
+  font-family: 'Atkinson Hyperlegible', sans-serif; 
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  max-width: 1000px;
+  width: 95%;
+      display: flex;
+    flex-direction: column; /* Stack title, card, and canvas */
+    align-items: center; /* Center items horizontally */
+
+}
+
+.settings-instructions-card {
+    width: 90%; /* Take full width of the container */
+    margin-bottom: 20px; /* Space below the card */
+    padding: 25px; /* Ensure internal padding if the 'panel' class didn't provide it */
+    max-width: 700px; /* Match container's max-width */
+}
+
+#mazeForm {
+ }
+
+/* Title styles - Muted accent color */
+.game-title {
+  text-align: center;
+  color: #5c6bc0; /* A more muted blue */
+  margin-bottom: 20px;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px #ddd;
+}
+.game-canvas {
+    margin: 20px auto; /* Adjust top margin if needed */
+}
+/* Panel styles for form and instructions - Lighter background */
+.panel {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+}
+
+.panel-title {
+  color: #333;
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  text-shadow: 0.5px 0.5px #f0f0f0;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.label-text {
+  width: 160px;
+  margin-right: 15px;
+  color: #555;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  width: 120px;
+  font-size: 1em;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #5c6bc0;
+  box-shadow: 0 0 5px rgba(92, 107, 192, 0.5);
+}
+
+/* Button styles - More accessible button color */
+.action-button {
+  background-color: #5c6bc0;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.action-button:hover {
+  background-color: #3f51b5; /* Darker shade on hover */
+}
+
+.action-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Canvas styles - Lighter border */
+.game-canvas {
+  display: block;
+  margin: 25px auto;
+  border: 2px solid #888;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light canvas background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Instructions styles - Lighter background */
+.info-panel {
+  text-align: center;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.instruction-text {
+  line-height: 1.6;
+  color: #555;
+}
+
+.highlight {
+  color: #007bff; /* A standard, readable blue */
+  font-weight: bold;
+}/* Cosmic Body and Container Styles */
+body {
+    background-color: #050517; /* Deep space background */
+    color: #f0f8ff; /* Alice Blue - a soft, ethereal white */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent panel */
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7); /* Deeper shadow for depth */
+    max-width: 800px;
+    width: 95%;
+    border: 1px solid #2e2e4d; /* Subtle dark border */
+}
+
+/* Galactic Title */
+.game-title {
+    text-align: center;
+    color: #a7c957; /* Alien green/yellow - a cosmic accent */
+    margin-bottom: 35px;
+    font-size: 2.8em;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px #000; /* Stronger shadow for pop */
+}
+
+/* Nebula Panels */
+.panel {
+    background-color: #1e1e3a; /* Dark purplish-blue */
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #444466;
+}
+
+.panel-title {
+    color: #f0f8ff;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Stardust Form Groups */
+.form-group {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.label-text {
+    width: 180px;
+    margin-right: 20px;
+    color: #d1d1e0; /* Light gray-blue */
+}
+
+.input-field {
+    padding: 12px;
+    border: 1px solid #555577;
+    border-radius: 6px;
+    background-color: #2c2c49; /* Darker purple-blue */
+    color: #f0f8ff;
+    width: 140px;
+    font-family: inherit;
+    font-size: 1.1em;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #a7c957; /* Highlight with the accent color */
+    box-shadow: 0 0 8px rgba(167, 201, 87, 0.6);
+}
+
+/* Hyperdrive Button */
+.action-button {
+    background-color: #a7c957;
+    color: #050517; /* Dark text on the accent */
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.action-button:hover {
+    background-color: #8abb3d; /* Slightly darker hover */
+}
+
+.action-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Void Canvas */
+.game-canvas {
+    display: block;
+    margin: 30px auto;
+    border: 2px solid #444466;
+    border-radius: 6px;
+    background-color: #000; /* True black for the void */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Cosmic Instructions */
+.info-panel {
+    text-align: center;
+    background-color: #1e1e3a;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #444466;
+}
+
+.instruction-text {
+    line-height: 1.7;
+    color: #d1d1e0;
+}
+
+.highlight {
+    color: #ffca3a; 
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+}
